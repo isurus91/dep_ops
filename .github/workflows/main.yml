@@ -19,7 +19,7 @@ jobs:
       - name: Run a one-line script
         run: echo "Checked out the code"
 
-       -name: Run a multi-line script
+      - name: Run a multi-line script
         run: |
           echo "This is a multi-line script"
           echo "It can run multiple commands"
