@@ -28,7 +28,7 @@ jobs:
   build-dbs:
     runs-on: windows-latest
     steps:
-      - run: echo "building api
+      - run: echo "building api"
 
   build-db:
     needs: build
