@@ -14,6 +14,8 @@ jobs:
   mainjob:
     name: "print variables"
     runs-on: ubuntu-latest
+    env: 
+      MY_SEC:${{secrets.MY_TOP_SEC}}
     steps:
       - run: |
           echo "$GITHUB_ACTION"
@@ -23,6 +25,8 @@ jobs:
           echo "$GITHUB_RUN_ID"
           echo "$GITHUB_RUN_NUMBER"
           echo "$RUNNER_NAME"
+          echo "MY SECRET: ${{ secrets.MY_TOP_SEC }}"
+          echo "MY env sec is : $MY_SEC"
   build:
     runs-on: ubuntu-latest
 
