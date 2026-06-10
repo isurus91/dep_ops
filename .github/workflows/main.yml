@@ -11,6 +11,18 @@ on:
 
 jobs:
 
+  mainjob:
+    name: "print variables"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "$GITHUB_ACTION"
+          echo "$GITHUB_ENV"
+          echo "$GITHUB_PATH"
+          echo "$GITHUB_JOB"
+          echo "$GITHUB_RUN_ID"
+          echo "$GITHUB_RUN_NUMBER"
+          echo "$RUNNER_NAME"
   build:
     runs-on: ubuntu-latest
 
