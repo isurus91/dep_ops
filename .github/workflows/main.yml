@@ -15,7 +15,7 @@ jobs:
     name: "print variables"
     runs-on: ubuntu-latest
     env: 
-      MY_SEC:${{secrets.MY_TOP_SEC}}
+      MY_SEC: ${{secrets.MY_TOP_SEC}}
     steps:
       - run: |
           echo "$GITHUB_ACTION"
