@@ -24,7 +24,7 @@ jobs:
               uses: docker/build-push-action@v7.2.0
               with:
                 file: 
-                tags: "isuru/devopspython:${{github.sha}}"
+                tags: "isuru91/devopspython:${{github.sha}}"
                 push: true
             
             - name:  Updating image tags in Kubernetes manifests files
