@@ -36,7 +36,7 @@ jobs:
               run: |
                 git config --global user.name "isuru91"
                 git config --global user.email "udithsenanayake@gmail.com"
-                git add ./manifests/02_devopsdep.yaml
+                git add ./.github/workflows/manifests/02_devopsdep.yaml
                 git commit -am "Updated image tags in Kubernetes manifests files"
                 git push origin HEAD:main
 
