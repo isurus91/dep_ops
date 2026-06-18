@@ -30,7 +30,7 @@ jobs:
             - name:  Updating image tags in Kubernetes manifests files
               run: |
                 pip install yq
-                yq -Yi '.spec.template.spec.containers[0].image = "isuru91/devopspython:${{github.sha}}"' ./github/workflows/manifests/02_devopsdep.yaml
+                yq -Yi '.spec.template.spec.containers[0].image = "isuru91/devopspython:${{github.sha}}"' ./.github/workflows/manifests/02_devopsdep.yaml
 
             - name:  Commit and push changes to Kubernetes manifests files
               run: |
