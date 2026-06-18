@@ -16,5 +16,5 @@ spec:
         app: devopsdep
     spec:
       containers:
-        - image: isuru/devopspython:v1
+        - image: isuru91/devopspython:v1
           name: devopspython
